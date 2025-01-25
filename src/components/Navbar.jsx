@@ -10,9 +10,9 @@ const Navbar = () => {
 
         <div className='flex flex-1 justify-center hidden md:flex -ml-28'>
           {navList.map((nav) => (
-            <div key={nav} className='inter-regular flex items-center text-md cursor-pointer text-[#636364] hover:text-[#1d1d1f] transition-all px-4 md:p-3 lg:px-6 xl:px-7'>
-              {nav}
-            </div>
+            <a key={nav} href={nav.link} className='inter-regular flex items-center text-md cursor-pointer text-[#636364] hover:text-[#1d1d1f] transition-all px-4 md:p-3 lg:px-6 xl:px-7'>
+              {nav.name}
+            </a>
           ))}
         </div>
         {/* change to animated button (when hovered) */}

@@ -13,6 +13,8 @@ export default function Bio() {
     gsap.to('#name', { opacity: 1, delay: 1.5, duration: 1.5 });
     gsap.to('#title', { opacity: 1, delay: 1.8, duration: 1.5 });
     gsap.to('#bio', { opacity: 1, delay: 2.2, duration: 1.5 });
+    gsap.to('#bio_footer', { opacity: '40%', delay: 2.6, duration: 1.5 });
+
     createAnimation();
   }, [])
 
@@ -69,6 +71,9 @@ export default function Bio() {
         <div id="name" className='text-3xl md:text-4xl lg:-mt-10 text-[#e2e2e5] ml-8 inter-extrabold tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
         <div  id="title" className='text-xl md:text-2xl text-[#e2e2e5] ml-8 inter-regular  opacity-0'>Front End Developer</div>
       <div id='bio' className="flex flex-wrap mt-32 lg:mt-24 ml-8 mr-30 sm:mr-40 md:mr-34 lg:mr-56 xl:mr-72 opacity-0">{splitWords(phrase)}</div>
+      <br/><br/><br/>
+      <div  id="bio_footer" className='text-xs md:text-sm lg:text-md text-[#e2e2e5] mt-20 ml-8 mr-32 md:mr-64 lg:mr-121 inter-regular opacity-20'><i>Glow Through the Code</i> embodies my personal vision of driving innovation to make a meaningful impact through code. In another sense, it also means being distinctive and exceptional in the way you approach life, challenges, and opportunities.
+      </div>
     </main>
   );
 }
