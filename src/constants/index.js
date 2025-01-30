@@ -1,3 +1,13 @@
+import lighten from "../assets/images/projects/1.png";
+import match from "../assets/images/projects/2.png";
+import staycation from "../assets/images/projects/7.png";
+import levanter from "../assets/images/projects/5.png";
+import myspace from "../assets/images/projects/3.png";
+import ggame from "../assets/images/projects/8.png";
+import englighten from "../assets/images/projects/6.png";
+import onlinestore from "../assets/images/projects/4.png"
+
+
 export const navList = [ 
     { name: "Home", link: "#home" },
     { name: "Discover", link: "#discover" },
@@ -33,3 +43,62 @@ export const skills = [
     'Collaboration',
     'Research and innovation',
 ];
+
+export const projectList = [
+    {
+      id: 1,
+      image: lighten,
+      title: "Lighten",
+      description: "A brief description of the project.",
+      language: "React Native, NativeWind"
+    },
+    {
+        id: 2,
+        image: match,
+        title: "MATcH",
+        description: "A brief description of the project.",
+        language: "Unity"
+    },
+    {
+        id: 3,
+        image: staycation,
+        title: "Staycation Website",
+        description: "A brief description of the project.",
+        language: "React.js, Tailwind CSS, Node.js"
+    },
+    {
+        id: 4,
+        image: levanter,
+        title: "Levanter",
+        description: "A brief description of the project.",
+        language: "Figma"
+    },
+    {
+        id: 5,
+        image: myspace,
+        title: "MySpace",
+        description: "A brief description of the project.",
+        language: "Figma"
+    },
+    {
+        id: 6,
+        image: ggame,
+        title: "Guessing Game",
+        description: "A brief description of the project.",
+        language: "HTML, CSS, JavaScript"
+    },
+    {
+        id: 7,
+        image: englighten,
+        title: "EngLighten",
+        description: "A brief description of the project.",
+        language: "Figma"
+    },
+    {
+        id: 8,
+        image: onlinestore,
+        title: "Shopee Redesign",
+        description: "A brief description of the project.",
+        language: "Figma"
+    },
+]

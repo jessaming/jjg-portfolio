@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import gsap from 'gsap';
 import { phrase } from '../constants'
 
@@ -7,6 +8,13 @@ import { phrase } from '../constants'
 export default function Bio() {
   let refs = useRef([]);
   const container = useRef(null);
+
+  const [title] = useTypewriter({
+    words: ['Front End Developer', "UI/UX Designer", "React Developer"],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 50,
+  })
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -37,7 +45,7 @@ export default function Bio() {
     phrase.split(" ").forEach((word, i) => {
       const letters = splitLetters(word);
       body.push(
-        <p key={word + "_" + i} className="text-xl md:text-2xl mr-1 font-bold inter-medium">
+        <p key={word + "_" + i} className="text-xl md:text-2xl mr-1 font-bold inconsolata-regular">
           {letters}
         </p>
       );
@@ -65,15 +73,27 @@ export default function Bio() {
 
   return (
     <main
-      ref={container}
-      className="flex flex-col h-260 md:h-300 lg:h-300 items-start justify-center text-gray-300 bg-[#1d1d1f]"
-    >
-        <div id="name" className='text-3xl md:text-4xl lg:-mt-10 text-[#e2e2e5] ml-8 inter-extrabold tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
-        <div  id="title" className='text-xl md:text-2xl text-[#e2e2e5] ml-8 inter-regular  opacity-0'>Front End Developer</div>
-      <div id='bio' className="flex flex-wrap mt-32 lg:mt-24 ml-8 mr-30 sm:mr-40 md:mr-34 lg:mr-56 xl:mr-72 opacity-0">{splitWords(phrase)}</div>
-      <br/><br/><br/>
-      <div  id="bio_footer" className='text-xs md:text-sm lg:text-md text-[#e2e2e5] mt-20 ml-8 mr-32 md:mr-64 lg:mr-121 inter-regular opacity-20'><i>Glow Through the Code</i> embodies my personal vision of driving innovation to make a meaningful impact through code. In another sense, it also means being distinctive and exceptional in the way you approach life, challenges, and opportunities.
-      </div>
+      ref={container} className='-mt-80 pt-90'>
+        <div className="flex flex-col h-full w-[90%] mx-auto items-start justify-start bg-[#2a2a2a] rounded-4xl">
+          <div className='flex flex-row mx-auto justify-between w-[97.5%] px-4 lg:px-2 m-5'>
+            <div className='h-6 w-6 bg-[#fe4e4d] rounded-full'></div>
+            <div className='h-6 w-6 bg-[#feb800] rounded-full'></div>
+            <div className='h-6 w-6 bg-[#00cb19] rounded-full'></div>
+            <div className='h-6 w-[70%] sm:w-[78%] md:w-[84%] lg:w-[89%] xl:w-[90%] bg-[#6c7173] rounded-full'></div>
+          </div>
+        
+          <div className='mt-30 flex flex-col items-center justify-center mx-auto'>
+            <div id="name" className='text-3xl md:text-5xl text-[#44c1f1] inconsolata-medium tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
+            <div id="name" className='text-xl md:text-3xl  text-[#dcdcaa] inconsolata-regular-italic tracking-wide opacity-0 m-3'>&#8203;{title}</div>
+          </div>
+
+          <div>
+            <div id='bio' className="flex flex-wrap mt-32 lg:mt-24 ml-8 lg:ml-30 mr-30 sm:mr-40 md:mr-34 lg:mr-56 xl:mr-72 text-[#dcaf9d] opacity-0">{splitWords(phrase)}</div>
+              <br/><br/><br/>
+              <div  id="bio_footer" className='text-xs md:text-sm lg:text-md text-gray-300 mt-15 ml-8 mb-30 lg:ml-30  mr-32 md:mr-64 lg:mr-121 inconsolata-regular opacity-20'><i>Glow Through the Code</i> embodies my personal vision of driving innovation to make a meaningful impact through code. In another sense, it also means being distinctive and exceptional in the way you approach life, challenges, and opportunities.
+              </div> 
+            </div>        
+        </div>
     </main>
   );
 }

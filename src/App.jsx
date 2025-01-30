@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
       <Cursor/>
       <Bio />
-      <Discover id='discover' />
+      {/* <Discover id='discover' /> */}
       <Skills  tags={skills} id='skills' />
       <Works id='works' />
       <Connect />
