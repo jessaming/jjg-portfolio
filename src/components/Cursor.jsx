@@ -42,7 +42,7 @@ const Cursor = () => {
 
         <div className='w-full h-100 flex justify-center items-center'>
             <h1 id='quote' onMouseEnter={()=>gsap.to("#cursor", {scale:8, duration:0.3})} onMouseLeave={()=>gsap.to("#cursor", {scale:1, duration:0.3})}
-            className='inter-extrabold text-6xl mx-7 max-sm:mr-10 text-center opacity-0'>Glow through the code.</h1>
+            className='font-clash font-regular text-6xl mx-7 max-sm:mr-10 text-center opacity-0'>Glow through the code.</h1>
         </div>
         
         </>

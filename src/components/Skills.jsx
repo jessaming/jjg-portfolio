@@ -7,8 +7,8 @@ const Skills = ({ tags }) => {
   }, []);
 
   return (
-    <div id='skills' className='h-screen flex flex-col justify-center items-center '>
-      <div id='title' className='text-[#1d1d1f] text-3xl flex justify-center items-center inter-semibold opacity-0'>
+    <div id='skills' className='h-screen flex flex-col justify-center items-center'>
+      <div id='title' className='text-[#1d1d1f] text-4xl flex justify-center items-center font-clash font-medium opacity-0'>
         Skills on display.
       </div>
       <div className='flex flex-wrap justify-center items-center px-0 lg:px-5 lg:gap-1 mx-10 sm:mx-18 md:mx-16 lg:mx-50 mt-14 sm:mt-20'>

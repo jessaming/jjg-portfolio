@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header className='w-full py-2 sm:px-10 m-6 px-6 flex justify-between items-center'>
       <nav className='flex w-full screen-max-width items-center relative'>
-        <p className='font-bold inter-extrabold text-2xl lg:text-3xl text-center max-sm:-ml-5 sm:-ml-5'>Jessamin Jhoy Godio</p>
+        <p className='font-medium font-clash text-2xl lg:text-3xl text-center max-sm:-ml-5 sm:-ml-5'>Jessamin Jhoy Godio</p>
 
         <div className='flex flex-1 justify-center hidden md:flex -ml-28'>
           {navList.map((nav) => (

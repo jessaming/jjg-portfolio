@@ -49,56 +49,57 @@ export const projectList = [
       id: 1,
       image: lighten,
       title: "Lighten",
-      description: "A brief description of the project.",
+      description: "Developed an interactive e-learning mobile app that enhances learning through NLP-powered features.",
       language: "React Native, NativeWind"
     },
     {
         id: 2,
         image: match,
         title: "MATcH",
-        description: "A brief description of the project.",
+        description: "Designed and built a puzzle game that challenges memory and mathematical skills.",
         language: "Unity"
     },
     {
         id: 3,
         image: staycation,
         title: "Staycation Website",
-        description: "A brief description of the project.",
+        description: "Created a user-friendly booking platform for vacation rentals.",
         language: "React.js, Tailwind CSS, Node.js"
     },
     {
         id: 4,
         image: levanter,
         title: "Levanter",
-        description: "A brief description of the project.",
+        description: " Designed a visually appealing and functional UI for a modern perfume store web application.",
         language: "Figma"
     },
     {
         id: 5,
         image: myspace,
         title: "MySpace",
-        description: "A brief description of the project.",
+        description: "Designed a sleek and engaging progress tracker mobile application with an intuitive user experience.",
         language: "Figma"
     },
     {
         id: 6,
         image: ggame,
         title: "Guessing Game",
-        description: "A brief description of the project.",
+        description: "Developed a fun and interactive browser-based game to test users' logic and intuition.",
         language: "HTML, CSS, JavaScript"
     },
     {
         id: 7,
         image: englighten,
         title: "EngLighten",
-        description: "A brief description of the project.",
+        description: "Designed an engaging educational app interface to support language learning for kids.",
         language: "Figma"
     },
     {
         id: 8,
         image: onlinestore,
         title: "Shopee Redesign",
-        description: "A brief description of the project.",
+        description: "Reimagined and improved a e-commerce platform’s UI/UX for better usability.",
         language: "Figma"
     },
 ]
+
