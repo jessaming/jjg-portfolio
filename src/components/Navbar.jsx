@@ -1,12 +1,15 @@
 import React from 'react'
 import { navList } from '../constants'
+import logo from '../assets/logo/logo.png'
 
 const Navbar = () => {
 
   return (
-    <header className='w-full py-2 sm:px-10 m-6 px-6 flex justify-between items-center'>
+    <header className='w-full py-2 sm:px-10 m-6 px-6 flex justify-center items-center'>
       <nav className='flex w-full screen-max-width items-center relative'>
-        <p className='font-medium font-clash text-2xl lg:text-3xl text-center max-sm:-ml-5 sm:-ml-5'>Jessamin Jhoy Godio</p>
+        <div className='font-medium font-clash text-2xl lg:text-3xl text-center max-sm:-ml-5 sm:-ml-5'>
+          <img src={logo} className='w-25 p-1' alt='logo' />
+        </div>
 
         <div className='flex flex-1 justify-center hidden md:flex -ml-28'>
           {navList.map((nav) => (
@@ -15,7 +18,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        {/* change to animated button (when hovered) */}
+
         <div className='bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none rounded-3xl flex items-center max-sm:absolute max-sm:right-10 sm:absolute sm:right-5 px-4'>
           <p className='inter-bold text-white text-center p-3 text-md' >
           Connect
