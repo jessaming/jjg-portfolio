@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
+
 const Cursor = () => {
     const cursorRef = useRef(null);
+    const textRef = useRef(null);
 
     useEffect(() => {
         const handleMouseMove = (event) => {
@@ -33,6 +35,22 @@ const Cursor = () => {
         gsap.to(cursorRef.current, { scale: 1, duration: 0.3 });
     };
 
+    useEffect(() => {
+        gsap.set(textRef.current, {
+            opacity: 0,
+            filter: 'blur(5px)',
+        });
+
+        gsap.to(textRef.current, {
+            opacity: 1,
+            filter: 'blur(0px)',
+            duration: 1.2,
+            ease: "sine.inOut",
+        });
+    }, []);
+
+
+
     return (
         <>
             <div
@@ -45,15 +63,17 @@ const Cursor = () => {
                 }}
             />
 
-            <div className='w-full h-100 flex justify-center items-center'>
-                <h1 
-                    id='quote' 
-                    onMouseEnter={handleMouseEnter} 
-                    onMouseLeave={handleMouseLeave}
-                    className='font-clash font-regular text-6xl mx-7 max-sm:mr-10 text-center'
-                >
-                    Glow through the code.
-                </h1>
+            <div className='w-full h-100 flex flex-col justify-center items-center'>
+                <div className='relative'>
+                    <h1 
+                        ref={textRef}
+                        onMouseEnter={handleMouseEnter} 
+                        onMouseLeave={handleMouseLeave}
+                        className='font-clash font-regular text-6xl mx-7 max-sm:mr-10 text-center opacity-100'
+                    >
+                        Glow through the code.
+                    </h1>
+                </div>
             </div>
         </>
     );

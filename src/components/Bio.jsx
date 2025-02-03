@@ -4,6 +4,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import gsap from 'gsap';
 import { phrase } from '../constants'
 
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Bio() {
   let refs = useRef([]);
@@ -12,12 +13,11 @@ export default function Bio() {
   const [title] = useTypewriter({
     words: ['Front End Developer', "UI/UX Designer", "React Developer"],
     loop: {},
-    typeSpeed: 100,
+    typeSpeed: 120,
     deleteSpeed: 50,
   })
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     gsap.to('#name', { opacity: 1, delay: 1.5, duration: 1.5 });
     gsap.to('#title', { opacity: 1, delay: 1.8, duration: 1.5 });
     gsap.to('#bio', { opacity: 1, delay: 2.2, duration: 1.5 });
@@ -31,8 +31,9 @@ export default function Bio() {
       scrollTrigger: {
           trigger: container.current,
           scrub: true,
-          start: `top`,
-          end: `+=${window.innerHeight / 1.5}`,
+          markers: false,
+          start: `0%`,
+          end: `22%`,
       },
       opacity: 1,
       ease: "none",
@@ -71,10 +72,42 @@ export default function Bio() {
     return letters;
   };
 
+  useEffect(() => {
+    const divScale = document.querySelectorAll('.reveal');
+
+    divScale.forEach((div) => {
+      gsap.fromTo(
+        div,
+        {
+          width: '100%',
+          borderRadius: 0,
+        
+        },
+        {
+          width: '90%',
+          duration: 1,
+          borderRadius: '32px',
+          scrollTrigger: {
+            trigger: div,
+            start: 'top 60%',
+            end: 'top 45%',
+            scrub: true,
+            markers: false,
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <main
-      ref={container} className='-mt-80 pt-90'>
-        <div className="flex flex-col h-full w-[90%] mx-auto items-start justify-start bg-[#2a2a2a] rounded-4xl">
+      ref={container} id='discover' className='-mt-80 pt-90'>
+        <div className="reveal flex flex-col h-full w-[90%] mx-auto items-start justify-start bg-[#2a2a2a] rounded-4xl">
           <div className='flex flex-row mx-auto justify-between w-[97.5%] px-4 lg:px-2 m-5'>
             <div className='h-6 w-6 bg-[#fe4e4d] rounded-full'></div>
             <div className='h-6 w-6 bg-[#feb800] rounded-full'></div>
@@ -83,8 +116,8 @@ export default function Bio() {
           </div>
         
           <div className='mt-30 flex flex-col items-center justify-center mx-auto'>
-            <div id="name" className='text-3xl md:text-5xl text-[#44c1f1] inconsolata-medium tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
-            <div id="name" className='text-xl md:text-3xl  text-[#dcdcaa] inconsolata-regular-italic tracking-wide opacity-0 m-3'>&#8203;{title}</div>
+            <div id="name" className='text-4xl sm:text-5xl text-[#44c1f1] inconsolata-medium tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
+            <div id="title" className='text-2xl md:text-3xl  text-[#dcdcaa] inconsolata-regular-italic tracking-wide opacity-0 m-3'>&#8203;{title}</div>
           </div>
 
           <div>

@@ -1,9 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { projectList } from '../constants';
 import { Modal, Divider } from 'antd';
-import { InformationCircleIcon } from '@heroicons/react/24/outline'; // Import the info icon
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger); // Import the info icon
 
 const Works = () => {
+  useEffect(() => {
+    const splitTypes = document.querySelectorAll('.reveal-type-left');
+
+    splitTypes.forEach((char) => {
+
+      gsap.fromTo(
+        char,
+        {
+          opacity: 0, 
+          x:300,
+        },
+        {
+          color: '#1d1d1f',
+          opacity: 1,
+          x: 0, 
+          duration: 1,
+          scrollTrigger: {
+            trigger: char,
+            start: 'top 100%',
+            end: 'top 60%',
+            scrub: true,
+            markers: false,
+            toggleActions: 'play play reverse reverse',
+          },
+        }
+      );
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   const [activePanel, setActivePanel] = useState(projectList[0].id);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -26,11 +63,11 @@ const Works = () => {
   const activeItem = projectList.find(item => item.id === activePanel);
 
   return (
-    <div className='h-full justify-center items-center mb-40'>
-      <h1 className='mx-8 p-10 text-4xl font-clash font-medium flex justify-center items-center'>
+    <div id='works' className='h-full justify-center items-center mb-40'>
+      <h1 className='reveal-type-left mx-5 p-10 text-4xl sm:text-5xl text-center font-clash font-medium flex justify-center items-center text-[#1d1d1f]'>
         Explore the creations.
       </h1>
-      <div className='flex flex-col items-center justify-center h-full overflow-hidden my-10'>
+      <div className='reveal-type-left flex flex-col items-center justify-center h-full overflow-hidden my-10'>
         <div className='xl:flex xl:flex-row w-[80%] mx-auto gap-7'>
           {projectList.map(item => (
             <div

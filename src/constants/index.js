@@ -9,7 +9,7 @@ import onlinestore from "../assets/images/projects/4.png"
 
 
 export const navList = [ 
-    { name: "Home", link: "#home" },
+    { name: "Home", link: "/" },
     { name: "Discover", link: "#discover" },
     { name: "Skills", link: "#skills" },
     { name: "Works", link: "#works" }
@@ -70,7 +70,7 @@ export const projectList = [
         id: 4,
         image: levanter,
         title: "Levanter",
-        description: " Designed a visually appealing and functional UI for a modern perfume store web application.",
+        description: "Designed a visually appealing and functional UI for a web application of a perfume store whose name was inspired by a song.",
         language: "Figma"
     },
     {
@@ -84,7 +84,7 @@ export const projectList = [
         id: 6,
         image: ggame,
         title: "Guessing Game",
-        description: "Developed a fun and interactive browser-based game to test users' logic and intuition.",
+        description: "Developed a fun and interactive browser-based game to test users’ logic and intuition.",
         language: "HTML, CSS, JavaScript"
     },
     {
@@ -98,8 +98,14 @@ export const projectList = [
         id: 8,
         image: onlinestore,
         title: "Shopee Redesign",
-        description: "Reimagined and improved a e-commerce platform’s UI/UX for better usability.",
+        description: "Reimagined and improved an e-commerce platform’s UI/UX for better usability.",
         language: "Figma"
     },
 ]
 
+export const phoneNumber = '09227077765';
+export const emailAddress = 'jessaminjhoygodio@gmail.com';
+export const liUrl = 'https://www.linkedin.com/in/jessamin-jhoy-godio/';
+export const fbmUrl = 'https://m.me/jessalalalaaa';
+export const igUrl = 'https://www.instagram.com/jessalalalaaa';
+export const ghUrl = 'https://github.com/jessaming';
