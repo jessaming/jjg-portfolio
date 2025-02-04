@@ -10,9 +10,9 @@ import onlinestore from "../assets/images/projects/4.png"
 
 export const navList = [ 
     { name: "Home", link: "/" },
-    { name: "Discover", link: "discover" },
-    { name: "Skills", link: "skills" },
-    { name: "Works", link: "works" }
+    { name: "Discover", link: "#discover" },
+    { name: "Skills", link: "#skills" },
+    { name: "Works", link: "#works" }
 ];
 
 export const phrase = "Hello, World! I am a passionate developer-in-the-making with a heart for innovation, creativity, and creating cool experiences that can make a difference. I enjoy the artistic process of designing and developing, with a keen eye for detail to achieve well-executed results. My goal is to continuously improve and surpass my current abilities. While front-end development excites me, I am also eager to explore other tools and tech stacks to broaden my skill set. In the present and beyond, I am committed to learning and growing further than I usually do.";
