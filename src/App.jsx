@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import { ReactLenis } from 'lenis/react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
@@ -9,6 +8,7 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import Connect from './components/Connect';
 import { skills } from './constants';
+import './index.css';
 
 const App = () => {
   return (
@@ -17,13 +17,11 @@ const App = () => {
         <Background />
         <Navbar />
         <div className='relative'>
-          <Cursor />
-          <Routes>
-            <Route path="/" element={<Bio id='discover' />} />
-            <Route path="/skills" element={<Skills tags={skills} id='skills' />} />
-            <Route path="/works" element={<Works id='works' />} />
-            <Route path="/connect" element={<Connect />} />
-          </Routes>
+        <Cursor/>
+          <Bio id='discover'/>
+          <Skills  tags={skills} id='skills' />
+          <Works id='works' />
+          <Connect />
         </div>
       </main>
     </ReactLenis>
