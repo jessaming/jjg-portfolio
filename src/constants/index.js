@@ -102,10 +102,3 @@ export const projectList = [
         language: "Figma"
     },
 ]
-
-export const emailAddress = 'jessaminjhoygodio@gmail.com';
-export const liUrl = 'https://www.linkedin.com/in/jessamin-jhoy-godio/';
-export const fbmUrl = 'https://m.me/jessalalalaaa';
-export const igUrl = 'https://www.instagram.com/jessalalalaaa';
-export const fbUrl = 'https://www.facebook.com/jessalalalaaa';
-export const ghUrl = 'https://github.com/jessaming';

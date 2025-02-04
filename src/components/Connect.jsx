@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { emailAddress, fbmUrl, fbUrl, ghUrl, igUrl, liUrl } from '../constants';
+import { emailAddress, fbmUrl, fbUrl, ghUrl, igUrl, liUrl } from '../constants/info';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
