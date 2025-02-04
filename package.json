@@ -1,6 +1,6 @@
 {
   "name": "jjg_pfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://jessaming.github.io/jjg-portfolio/",
