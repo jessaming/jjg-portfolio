@@ -1,13 +1,14 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { ReactLenis } from 'lenis/react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
-import Cursor  from '../src/components/Cursor'
-import Bio from '../src/components/Bio'
-import Skills from '../src/components/Skills'
-import Works from '../src/components/Works'
-import Connect from '../src/components/Connect'
-import { skills } from '../src/constants';
+import Cursor from './components/Cursor';
+import Bio from './components/Bio';
+import Skills from './components/Skills';
+import Works from './components/Works';
+import Connect from './components/Connect';
+import { skills } from './constants';
 
 const App = () => {
   return (
@@ -16,11 +17,13 @@ const App = () => {
         <Background />
         <Navbar />
         <div className='relative'>
-        <Cursor/>
-          <Bio id='discover'/>
-          <Skills  tags={skills} id='skills' />
-          <Works id='works' />
-          <Connect />
+          <Cursor />
+          <Routes>
+            <Route path="/" element={<Bio id='discover' />} />
+            <Route path="/skills" element={<Skills tags={skills} id='skills' />} />
+            <Route path="/works" element={<Works id='works' />} />
+            <Route path="/connect" element={<Connect />} />
+          </Routes>
         </div>
       </main>
     </ReactLenis>
