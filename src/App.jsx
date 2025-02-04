@@ -17,7 +17,7 @@ const App = () => {
         <Navbar />
         <div className='relative'>
         <Cursor/>
-          <Bio />
+          <Bio id='discover'/>
           <Skills  tags={skills} id='skills' />
           <Works id='works' />
           <Connect />

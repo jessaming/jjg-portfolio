@@ -22,19 +22,14 @@ const Navbar = () => {
             <a
               key={nav} 
               href={nav.link}
-              className='inter-regular flex items-center text-md cursor-pointer text-[#636364] hover:text-[#1d1d1f] hover:text-lg transition-all px-4 md:p-3 lg:px-6 xl:px-7'
-            >
+              className='inter-regular flex items-center text-md cursor-pointer text-[#636364] hover:text-[#1d1d1f] hover:text-lg transition-all px-4 md:p-3 lg:px-6 xl:px-7'>
               {nav.name}
             </a>
           ))}
         </div>
 
-        <button
-          onClick={ScrollToConnect}
-          className='group bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 hover:bg-gradient-to-br focus:outline-none rounded-3xl flex items-center max-sm:absolute max-sm:right-10 sm:absolute sm:right-5 px-6'>
-          <p className='group font-clash tracking-wide text-white p-3 text-md'>
-            Connect
-          </p>
+        <button onClick={ScrollToConnect} className='group bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 hover:bg-gradient-to-br focus:outline-none rounded-3xl flex items-center max-sm:absolute max-sm:right-10 sm:absolute sm:right-5 px-6'>
+          <p className='group font-clash tracking-wide text-white p-3 text-md'> Connect </p>
           <div className='group-hover:translate-x-1 transition-all'>
             <i className="fa fa-angle-right fa-sm text-white" aria-hidden="true"></i>
           </div>

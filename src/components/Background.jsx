@@ -537,13 +537,6 @@ const Background = () => {
           className='absolute inset-x-0 bottom-0 h-full w-full '
         />
       </div>
-
-      {/* sample 
-      
-      <div className='element fixed right-10 top-90'>
-        <div className='side1'></div>
-        <div className='side2'></div>
-      </div> */}
     </div>
   );
 }

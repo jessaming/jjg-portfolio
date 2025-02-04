@@ -13,8 +13,8 @@ export default function Bio() {
   const [title] = useTypewriter({
     words: ['Front End Developer', "UI/UX Designer", "React Developer"],
     loop: {},
-    typeSpeed: 120,
-    deleteSpeed: 50,
+    typeSpeed: 60,
+    deleteSpeed: 10,
   })
 
   useEffect(() => {
@@ -81,7 +81,6 @@ export default function Bio() {
         {
           width: '100%',
           borderRadius: 0,
-        
         },
         {
           width: '90%',
@@ -121,11 +120,11 @@ export default function Bio() {
           </div>
 
           <div>
-            <div id='bio' className="flex flex-wrap mt-32 lg:mt-24 ml-8 lg:ml-30 mr-30 sm:mr-40 md:mr-34 lg:mr-56 xl:mr-72 text-[#dcaf9d] opacity-0">{splitWords(phrase)}</div>
+            <div id='bio' className="flex flex-wrap mt-32 lg:mt-24 ml-8 lg:ml-30 mr-30 sm:mr-40 md:mr-34 lg:mr-56 xl:mr-72 text-[#dcaf9d] tracking-tight opacity-0">{splitWords(phrase)}</div>
               <br/><br/><br/>
-              <div  id="bio_footer" className='text-xs md:text-sm lg:text-md text-gray-300 mt-15 ml-8 mb-30 lg:ml-30  mr-32 md:mr-64 lg:mr-121 inconsolata-regular opacity-20'><i>Glow Through the Code</i> embodies my personal vision of driving innovation to make a meaningful impact through code. In another sense, it also means being distinctive and exceptional in the way you approach life, challenges, and opportunities.
-              </div> 
-            </div>        
+              <div  id="bio_footer" className='text-xs md:text-sm lg:text-md text-gray-300 mt-15 ml-8 mb-30 lg:ml-30  mr-32 md:mr-64 lg:mr-121 inconsolata-regular opacity-20'><i>Glow Through the Code</i> embodies my personal vision of driving innovation to make a meaningful impact through code. In another sense, it also means being radiant and exceptional in the way you approach life, challenges, and opportunities.
+            </div> 
+          </div>        
         </div>
     </main>
   );

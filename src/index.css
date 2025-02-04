@@ -30,96 +30,33 @@
 
   /* fonts */
 
-.inter-light {
-  font-family: "Inter", serif;
-  font-weight: 300;
-  font-style: normal;
-}
 
 .inter-regular {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .inter-medium {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .inter-semibold {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .inter-bold {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-
-.inter-extrabold {
-  font-family: "Inter", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.inter-light-italic {
-  font-family: "Inter", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.inter-regular-italic {
-  font-family: "Inter", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.inter-medium-italic {
-  font-family: "Inter", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.inter-semibold-italic {
-  font-family: "Inter", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.inter-bold-italic {
-  font-family: "Inter", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.inter-extrabold-italic {
-  font-family: "Inter", serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.inconsolata-light {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 300; 
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-light-italic {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 300; 
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
 }
 
 .inconsolata-regular {
-  font-family: "Inconsolata", serif;
+  font-family: "Inconsolata",'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 400; 
   font-style: normal;
@@ -127,7 +64,7 @@
 }
 
 .inconsolata-regular-italic {
-  font-family: "Inconsolata", serif;
+  font-family: "Inconsolata",'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 400; 
   font-style: italic;
@@ -135,7 +72,7 @@
 }
 
 .inconsolata-medium {
-  font-family: "Inconsolata", serif;
+  font-family: "Inconsolata", 'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 500; 
   font-style: normal;
@@ -143,57 +80,9 @@
 }
 
 .inconsolata-medium-italic {
-  font-family: "Inconsolata", serif;
+  font-family: "Inconsolata", 'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 500; 
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-semibold {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-semibold-italic {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-bold {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 700; 
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-bold-italic {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 700; 
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-extrabold {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.inconsolata-extrabold-italic {
-  font-family: "Inconsolata", serif;
-  font-optical-sizing: auto;
-  font-weight: 800; 
   font-style: italic;
   font-variation-settings: "wdth" 100;
 }
@@ -231,7 +120,7 @@
 }
 
 @theme {
-  --font-clash: 'ClashDisplay', sans-serif; 
+  --font-clash: 'ClashDisplay', 'Inter', sans-serif; 
 }
 
 

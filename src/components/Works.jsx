@@ -5,14 +5,13 @@ import { InformationCircleIcon } from '@heroicons/react/24/outline';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger); // Import the info icon
+gsap.registerPlugin(ScrollTrigger);
 
 const Works = () => {
   useEffect(() => {
     const splitTypes = document.querySelectorAll('.reveal-type-left');
 
     splitTypes.forEach((char) => {
-
       gsap.fromTo(
         char,
         {
@@ -74,8 +73,7 @@ const Works = () => {
               key={item.id}
               className={`panel flex items-center justify-center relative ${activePanel === item.id ? 'active' : ''}`}
               style={{ backgroundImage: `url(${item.image})` }}
-              onClick={() => handleClick(item.id)}
-            >
+              onClick={() => handleClick(item.id)}>
               <h1 className='rotated absolute left-[70%] top-[75%] text-2xl font-clash font-semibold justify-center items-center text-center w-100'>{item.title}</h1>
               <h1 className='not-rotated text-2xl font-clash font-semibold justify-center items-center text-center text-[#1d1d1f] w-100'>{item.title}</h1>
               
@@ -85,8 +83,7 @@ const Works = () => {
                   onClick={(e) => {
                     e.stopPropagation();
                     showModal();
-                  }}
-                >
+                  }}>
                   <InformationCircleIcon className='h-6 w-6' />
                 </button>
               )}

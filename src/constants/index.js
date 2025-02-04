@@ -15,7 +15,7 @@ export const navList = [
     { name: "Works", link: "#works" }
 ];
 
-export const phrase = "I'm a developer with a vision and passion for creating digital solutions that can make a difference. I got inspired by the amazing projects programmers and developers create, and decided that I wanted to be part of that world. I enjoy taking my time with design and development, paying attention to details while making sure I have fun along the way. Currently, I'm taking a BS in Computer Science, and I strive to constantly learn and grow beyond what I usually do.";
+export const phrase = "Hello, World! I am a passionate developer-in-the-making with a heart for innovation, creativity, and creating cool experiences that can make a difference. I enjoy the artistic process of designing and developing, with a keen eye for detail to achieve well-executed results. My goal is to continuously improve and surpass my current abilities. While front-end development excites me, I am also eager to explore other tools and tech stacks to broaden my skill set. In the present and beyond, I am committed to learning and growing further than I usually do.";
 
 export const skills = [
     'HTML',
@@ -103,9 +103,9 @@ export const projectList = [
     },
 ]
 
-export const phoneNumber = '09227077765';
 export const emailAddress = 'jessaminjhoygodio@gmail.com';
 export const liUrl = 'https://www.linkedin.com/in/jessamin-jhoy-godio/';
 export const fbmUrl = 'https://m.me/jessalalalaaa';
 export const igUrl = 'https://www.instagram.com/jessalalalaaa';
+export const fbUrl = 'https://www.facebook.com/jessalalalaaa';
 export const ghUrl = 'https://github.com/jessaming';
