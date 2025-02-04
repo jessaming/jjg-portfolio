@@ -38,7 +38,7 @@ const Skills = ({ tags }) => {
   }, []);
 
   return (
-    <div id='skills' className='h-screen flex flex-col justify-center items-center'>
+    <div id='skills' className='h-screen flex flex-col justify-center items-center my-40'>
       <div id='title' className='reveal-type-right text-[#1d1d1f] text-4xl sm:text-5xl md:text-6xl py-10 flex justify-center items-center font-clash font-medium'>
         Skills on display.
       </div>

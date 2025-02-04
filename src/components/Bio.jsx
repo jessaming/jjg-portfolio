@@ -105,7 +105,7 @@ export default function Bio() {
 
   return (
     <main
-      ref={container} id='discover' className='-mt-80 pt-90'>
+      ref={container} id='discover' className='-mt-80 pt-90 my-40'>
         <div className="reveal flex flex-col h-full w-[90%] mx-auto items-start justify-start bg-[#2a2a2a] rounded-4xl">
           <div className='flex flex-row mx-auto justify-between w-[97.5%] px-4 lg:px-2 m-5'>
             <div className='h-6 w-6 bg-[#fe4e4d] rounded-full'></div>
@@ -115,8 +115,8 @@ export default function Bio() {
           </div>
         
           <div className='mt-30 flex flex-col items-center justify-center mx-auto'>
-            <div id="name" className='text-3xl sm:text-4xl md:text-5xl text-[#44c1f1] inconsolata-medium tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
-            <div id="title" className='text-2xl md:text-3xl  text-[#dcdcaa] inconsolata-regular-italic tracking-wide opacity-0 m-3'>&#8203;{title}</div>
+            <div id="name" className='text-3xl sm:text-4xl md:text-5xl text-[#44c1f1] mx-5 text-center inconsolata-medium tracking-wide opacity-0'>JESSAMIN JHOY GODIO</div>
+            <div id="title" className='text-2xl md:text-3xl  text-[#dcdcaa] mx-3 inconsolata-regular-italic tracking-wide opacity-0 m-3'>&#8203;{title}</div>
           </div>
 
           <div>

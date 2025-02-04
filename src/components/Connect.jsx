@@ -24,7 +24,7 @@ const Connect = () => {
           scrollTrigger: {
             trigger: char,
             start: 'top 100%',
-            end: 'top 60%',
+            end: 'top 80%',
             scrub: true,
             markers: false,
             toggleActions: 'play play reverse reverse',
@@ -46,7 +46,7 @@ const Connect = () => {
   };
 
   return (
-    <div id='connect' className='h-screen flex flex-col justify-center items-center'>
+    <div id='connect' className='h-screen flex flex-col justify-center items-center my-40'>
       <h1 className='reveal-type-up mx-8 p-10 -mt-30 text-4xl font-clash font-medium flex justify-center items-center'>
         Get in touch.
       </h1>

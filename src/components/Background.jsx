@@ -10,9 +10,7 @@ const Background = () => {
       const paths = svgRef.querySelectorAll('path');
       
       paths.forEach((item) => {
-        const pathLength = item.getTotalLength();
-        console.log('Path Length:', pathLength);
-        
+        const pathLength = item.getTotalLength();        
         item.setAttribute('stroke-dasharray', pathLength);
         item.setAttribute('stroke-dashoffset', pathLength);
 
@@ -24,7 +22,6 @@ const Background = () => {
         animate.setAttribute('fill', 'freeze');
         // animate.setAttribute('repeatCount', 'indefinite');
 
-        console.log('Appending animate to path:', item);
         item.appendChild(animate);
       });
     });

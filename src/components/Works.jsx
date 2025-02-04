@@ -62,7 +62,7 @@ const Works = () => {
   const activeItem = projectList.find(item => item.id === activePanel);
 
   return (
-    <div id='works' className='h-full justify-center items-center mb-40'>
+    <div id='works' className='h-full justify-center items-center my-40'>
       <h1 className='reveal-type-left mx-5 p-10 text-4xl sm:text-5xl text-center font-clash font-medium flex justify-center items-center text-[#1d1d1f]'>
         Explore the creations.
       </h1>
@@ -74,8 +74,8 @@ const Works = () => {
               className={`panel flex items-center justify-center relative ${activePanel === item.id ? 'active' : ''}`}
               style={{ backgroundImage: `url(${item.image})` }}
               onClick={() => handleClick(item.id)}>
-              <h1 className='rotated absolute left-[70%] top-[75%] text-2xl font-clash font-semibold justify-center items-center text-center w-100'>{item.title}</h1>
-              <h1 className='not-rotated text-2xl font-clash font-semibold justify-center items-center text-center text-[#1d1d1f] w-100'>{item.title}</h1>
+              <h1 className='rotated absolute left-[70%] top-[75%] text-lg md:text-2xl font-clash font-semibold justify-center items-center text-center w-100'>{item.title}</h1>
+              <h1 className='not-rotated text-lg sm:text-2xl font-clash font-semibold justify-center items-center text-center text-[#1d1d1f] w-100'>{item.title}</h1>
               
               {activePanel === item.id && (
                 <button

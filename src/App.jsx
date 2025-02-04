@@ -7,22 +7,24 @@ import Bio from './components/Bio';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Connect from './components/Connect';
+import Footer from './components/Footer';
 import { skills } from './constants';
 import './index.css';
 
 const App = () => {
   return (
     <ReactLenis root>
-      <main className='text-black lg:ml-0'>
+      <main className='text-black lg:ml-0 flex flex-col min-h-screen'>
         <Background />
         <Navbar />
-        <div className='relative'>
-        <Cursor/>
-          <Bio id='discover'/>
-          <Skills  tags={skills} id='skills' />
+        <div className='relative flex-grow'>
+          <Cursor />
+          <Bio id='discover' />
+          <Skills tags={skills} id='skills' />
           <Works id='works' />
           <Connect />
         </div>
+        <Footer />
       </main>
     </ReactLenis>
   );

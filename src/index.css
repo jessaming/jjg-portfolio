@@ -5,15 +5,18 @@
     scroll-behavior: smooth;
   }
 
-  body {
+  body,html {
     color: white;
-    width: 100dvw;
     overflow-x: hidden;
-    height: 100%;
     background: #fafafa;
     border-color: #3b3b3b;
     user-select: none;
     cursor: default;
+  }
+
+  body {
+    position: relative;
+    width: 100%;
   }
   
   canvas {
@@ -237,6 +240,11 @@ h2:hover::before {
 
 /* works xl sizes */
 @media (max-width: 1650px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     position: relative; 
     height: 70vh;
@@ -302,6 +310,11 @@ h2:hover::before {
 
 /* xl sizes */
 @media (max-width: 1600px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     position: relative; 
     height: 65vh;
@@ -367,6 +380,11 @@ h2:hover::before {
 
 /* xl sizes */
 @media (max-width: 1400px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     position: relative; 
     height: 50vh;
@@ -433,6 +451,11 @@ h2:hover::before {
 
 /* lg sizes */
 @media (max-width: 1280px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     background-size: auto 100%;
     background-position: center;
@@ -494,6 +517,11 @@ h2:hover::before {
 }
 
 @media (max-width: 1200px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     background-size: auto 100%;
     background-position: center;
@@ -554,6 +582,11 @@ h2:hover::before {
 }
 
 @media (max-width: 1024px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     background-size: auto 100%;
     background-position: center;
@@ -616,6 +649,11 @@ h2:hover::before {
 
 /* sm sizes */
 @media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .panel {
     background-size: auto 100%;
     background-position: center;
