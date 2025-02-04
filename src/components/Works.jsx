@@ -104,7 +104,7 @@ const Works = () => {
         {activeItem && (
           <>
             <p className='inter-regular text-center mt-2'>{activeItem.description}</p>
-            <Divider plain className='text-center inter-regular-italic italic'>Made with {activeItem.language}</Divider>
+            <Divider plain className='text-center inter-regular-italic'>Made with {activeItem.language}</Divider>
           </>
         )}
       </Modal>
