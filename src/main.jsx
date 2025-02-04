@@ -1,14 +1,16 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 
-const root = createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <StrictMode>
-    <Router>
-      <App />
+    <Router basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="*" element={<App />}/>
+      </Routes>
     </Router>
   </StrictMode>
 );
