@@ -47,7 +47,7 @@ const Connect = () => {
 
   return (
     <div id='connect' className='h-screen flex flex-col justify-center items-center my-40'>
-      <h1 className='reveal-type-up mx-8 p-10 -mt-30 text-4xl font-clash font-medium flex justify-center items-center'>
+      <h1 className='reveal-type-up mx-8 p-10 text-4xl font-clash font-medium flex justify-center items-center'>
         Get in touch.
       </h1>
 
